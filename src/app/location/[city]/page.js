@@ -45,9 +45,7 @@ const Page = async ({ params }) => {
     
 
     const cityreport = await getcityreport(`https://api.openweathermap.org/data/3.0/onecall?lat=${city.coord.lat}&lon=${city.coord.lon}&appid=${process.env.API_KEY}&units=metric`,city)
-    console.log('====================================');
-    console.log(cityreport);
-    console.log('====================================');
+    
     // setting meta data 
     metadata.title=`${cityreport.city.name} Weather - Next Weather App`
 
