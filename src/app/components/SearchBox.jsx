@@ -19,7 +19,7 @@ const SearchBox = () => {
                 if (match) {
                     const cityData = {
                         ...city,
-                        slug:`${city.name.toLowerCase().replace(/ /g, "_")}-${city. id}`
+                        slug:`${city.name.toLowerCase().replace(/ /g, "_")}-${city.id}`
                     }
                     matchingCities.push(cityData);
                 }
@@ -27,7 +27,7 @@ const SearchBox = () => {
         }
         setresult(matchingCities);
     };
-    console.log(result);
+    
     return (
         <div className='w-[80%]'>
             <label htmlFor="search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
