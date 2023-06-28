@@ -2,7 +2,7 @@ import Image from 'next/image';
 import moment from 'moment-timezone';
 const WeeklyWeather = ({ weeklyweather, timezone }) => {
     return (
-        <div className='text-black'>
+        <div  className='text-black'>
             <h1 className=' text-xl'>
                 <span className='font-bold'>Weekly</span>  Weather
             </h1>
@@ -11,7 +11,7 @@ const WeeklyWeather = ({ weeklyweather, timezone }) => {
                     return;
                 }
                 return (
-                    <div className=' bg-purple-200  my-3 rounded-lg p-3'>
+                    <div key={index} className=' bg-purple-200  my-3 rounded-lg p-3'>
                         <div className='flex justify-between'>
                             <div className='flex gap-5'>
                                 <div>

@@ -6,7 +6,7 @@ const HourlyWeather = ({hourlyWeather,timezone}) => {
         <div className=''>
             <div className='flex gap-3 my-6 justify-between flex-row overflow-scroll'>
                 {hourlyWeather.map((weather,index)=>(
-                   <div className=' '>
+                   <div key={index} className=' '>
                      <div className=' w-40 md:w-60 bg-blue-400 rounded-md flex flex-col justify-center items-center' key={weather.dt}>
                         <span  className=' mt-6'>
                             {index==0 ? "Now": moment.unix(weather.dt).tz(timezone).format("LT")}
