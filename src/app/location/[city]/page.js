@@ -27,7 +27,7 @@ const getcityreport = async (url,city) => {
 }
 
 const getcityid = async (id) => {
-    const city = await fetch(`http://localhost:3000/api/citibyid?id=${id}`)
+    const city = await fetch(`https://weather-appication.vercel.app/api/citibyid?id=${id}`)
     const citydata = await city.json();
     return citydata
 }
