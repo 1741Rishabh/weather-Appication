@@ -2,9 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import moment from 'moment-timezone';
 const TodaysWeather = ({ city, weather,timezone }) => {
-    console.log('====================================');
-    console.log(timezone);
-    console.log('====================================');
+ 
     return (
         <div className='bg-blue-600 rounded-md flex  justify-between p-3 text-white md:p-6 '>
             <div className='w-[70%] '>

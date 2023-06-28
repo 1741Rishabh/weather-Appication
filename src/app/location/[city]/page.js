@@ -1,4 +1,4 @@
-import { Metadata } from 'next'
+
 import moment from 'moment-timezone';
 import TodaysWeather from '@/app/components/TodaysWeather';
 import HourlyWeather from '@/app/components/HourlyWeather';
